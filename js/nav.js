@@ -5,6 +5,8 @@ window.addEventListener("load", function () {
     button.addEventListener("click", function () {
         isMobileMenu = !isMobileMenu;
         mobileMenu.classList.toggle('hidden');
+        console.log(mobileMenu.classList.hidden);
+        console.log(mobileMenu.classList);
         console.log(isMobileMenu)
         if (isMobileMenu) {
             button.innerHTML = `<img src="../assets/cancel.svg" alt="close" />`
