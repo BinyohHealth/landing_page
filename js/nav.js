@@ -4,14 +4,12 @@ window.addEventListener("load", function () {
     let isMobileMenu = false;
     button.addEventListener("click", function () {
         isMobileMenu = !isMobileMenu;
-        mobileMenu.classList.toggle('hidden');
-        console.log(mobileMenu.classList.hidden);
-        console.log(mobileMenu.classList);
-        console.log(isMobileMenu)
         if (isMobileMenu) {
-            button.innerHTML = `<img src="../assets/cancel.svg" alt="close" />`
+            button.innerHTML = `<img src="../assets/cancel.svg" alt="close" />`;
+            mobileMenu.classList.remove('hidden');
         } else if (!isMobileMenu) {
             button.innerHTML = `<img src="../assets/hamburger.svg" alt="menu" />`
+            mobileMenu.classList.add('hidden');
         }
     })
 })
